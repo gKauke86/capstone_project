@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Login</title>
+ <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+ <link rel="stylesheet" href="resources/css/style.css">
+ <style type="text/css">
+   h1{
+    padding-top: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgb(83, 84, 85);
+    padding-bottom: 15px;
+    box-shadow:#f13c0e;
+   }
+.footer{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+p{
+font-size: 20px;
+}
+ </style>
+
+
+</head>
+<body>
+<h1>CEIT LIBRARY MANAGEMENT SYSTEM </h1>
+ <div class="container">
+   <img src="resources/icons/profile.png" alt="">
+<form action="pages/home.html"  name="loginForm"onsubmit=" return validate()"method="post">
+
+ <div class="form_input">
+  
+   <input class="input_form"s type="text" name="username" placeholder=" Enter your username">
+ </div>
+ <br>
+ <div class="form_input">
+  
+  <input class="input_form"type="password" name="password" placeholder="Enter your password">
+ </div>
+ <br>
+ <input class="input_form" type="submit" name="submit" value="Login" class="btn-login btn-primary">
+</form>
+
+ </div>
+
+ <!-- Footer Section -->
+    <section class="footer">
+      <p class="copyright" bg-secondary>&copy; Copyright 2021 CEIT-PNG</p>
+      <p class="copyright">
+        Built by &#x2661; by
+        Mr. Kauke Gilbert | Web Developer</a>
+      </p>
+    </section>
+ <script src="vendors/js/bootstrap.bundle.min.js"></script>
+
+ <script type="text/javascript">
+ 
+  // Form validation code will come here. 
+ function validate() {
+    if( document.loginForm.username.value == "" )
+     { 
+      alert( "Please enter your username!" );
+       document.loginForm.username.focus() ;
+        return false;
+         } 
+
+         if( document.loginForm.password.value == "" )
+     { 
+      alert( "Please enter your password!" );
+       document.loginForm.password.focus() ;
+        return false;
+         } 
+        }
+         
+         </script>
+
+</body>
+
+
+
+</html>

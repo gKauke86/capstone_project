@@ -1,0 +1,125 @@
+body{
+ margin: 0 auto;
+ background-image:url("../../images/library.png");
+ width:100%;
+ height: 800px;
+ background-repeat: no-repeat;
+ background-size: 100% 720px;
+}
+.container{
+ width: 500px;
+ height: 450px;
+ text-align: center;
+ margin: 0 auto;
+ background-color: rgb(44, 62, 80,0.7);
+ border-radius: 20px;
+ margin: auto;
+ margin-top: 160px;
+}
+.container img{
+ width: 150px;
+ height: 150px;
+ margin-top: -60px;
+ text-align: center;
+}
+/*header section*/
+.row{
+  position: fixed;
+  padding:0;
+  width:100%;
+}
+/* nav css */
+
+ul {
+
+  position: fixed;
+  
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(102, 182, 236);
+}
+
+.active {
+  background-color: #8a89eb;
+}
+p{
+  font-size: 35px;
+}
+
+/* section css */
+section{
+ text-align: center;
+ padding-top: 10px;
+
+}
+h1{
+ text-align: center;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: white;
+}
+form{
+ padding-top: 50px;
+}
+
+
+h3{
+ color: white;
+}
+option{
+ width: 50;
+ font-size: 20px;
+}
+.button{
+ border-radius: 20px;
+ width:20%;
+ height: 7%;
+ background-color: rgb(74, 91, 243);
+
+}
+.search-input{
+ border-radius: 20px;
+ width:30%;
+ height: 15%;
+ text-align: center;
+}
+.searchtype{
+  width:30%;
+ height: 15%;
+}
+ input{
+ border:0;
+}
+/* login form css */
+.input_form{
+  border-radius: 20px;
+ width:60%;
+ height: 50px;
+ text-align: center;
+}
+.form_input img{
+  width:40px;
+  height:40px;
+  
+}
+
+

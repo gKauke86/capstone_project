@@ -1,0 +1,66 @@
+<html>
+
+<head>
+
+ <title>Library Management System</title>
+
+ <link rel="stylesheet" href="../vendors/css/bootstrap.min.css">
+ <link rel="stylesheet" href="../resources/css/style.css">
+</head>
+
+<body>
+  <div class="row ">
+  <div class="col col-md-3 bg-secondary"><img src="../images/ceit-logo.png" alt="ceitlogo" height="150px" width="150px"></div>
+  <div class="col col-md-6 text-center text-white bg-secondary">
+    <h1 style="font-family:adobe arabic">CENTER OF EXCELLENCE IN IT</h1>
+       <h2 style="font-family:comic sans ms">LIBRARY MANAGEMENT SYSTEM</h2>
+       <p style="font-size:20px">The University of Papua New Guinea</p>
+</div>
+  <div class="col col-md-3 bg-secondary"><img style="float: right"src="../images/upng-logo.png" alt="ceitlogo" height="150px" width="150px"></div
+ 
+ </div>
+ <div class="nav">
+   <ul>
+  <li><a class="active" href="home.html">HOME</a></li>
+  <li><a href="newbook.html">INSERT </a></li>
+  <li><a href="display.php">VIEW </a></li>
+<li><a href="search.html">SEARCH</a></li>
+  
+  <li style="float:right"><a class="active" href="../index.html">Logout</a></li>
+</ul>  
+ </div>
+
+ <h1>Book Catalog Search</h1>
+<center>
+ <form action="results.php" method="post">
+
+  <h3>Choose Search Type:</h3><br />
+ 
+  <select class="searchtype"name="searchtype">
+   <option value="author">Author</option>
+ 
+  <option value="title">Title</option>
+ 
+  <option value="isbn">ISBN</option>
+ 
+ </select>
+ 
+  <br />
+ 
+  <h3>Enter Search Term:</h3> <br />
+ 
+  <input class="search-input" name="searchterm" type="text" size="40"/>
+ 
+  <br/>
+  <br>
+ 
+  <button class="btn btn-primary mt-20">Search</button>
+  </form>
+ 
+ 
+</center>
+ 
+ <script src="vendors/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
